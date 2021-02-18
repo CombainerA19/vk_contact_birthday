@@ -8,6 +8,7 @@ app = Flask(__name__)
 def calendar():
     return render_template("birthday.html")
 
+# Not currently using route
 @app.route("/api/vk", methods=["POST"])
 def vk():
     id = request.form["id"]
